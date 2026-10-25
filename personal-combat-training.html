@@ -277,7 +277,7 @@ footer{padding:44px 0 110px;border-top:1px solid rgba(255,255,255,.07);color:rgb
 
 <script>
 (function(){
- var data={"plans": [{"name": "Drop-In Class", "price": 10.0, "mode": "session"}, {"name": "Monthly 1x / Week", "price": 45.0, "mode": "monthly"}, {"name": "Monthly 2x+ / Week", "price": 65.0, "mode": "monthly"}], "pt": 35.0};
+ var data={"plans": [{"name": "Drop-In Class", "price": 10.0, "mode": "per"}, {"name": "Monthly 1x / Week", "price": 45.0, "mode": "monthly"}, {"name": "Monthly 2x+ / Week", "price": 65.0, "mode": "monthly"}], "pt": 35.0};
  var plans=document.querySelectorAll('.plan');
  var sel=0, freq=document.getElementById('freq'), pt=document.getElementById('pt');
  plans.forEach(function(p,i){p.addEventListener('click',function(){sel=i;plans.forEach(function(q,j){q.classList.toggle('sel',j===i)});calc()})});
@@ -294,7 +294,7 @@ footer{padding:44px 0 110px;border-top:1px solid rgba(255,255,255,.07);color:rgb
   pt.parentElement.querySelector('output').textContent=pt.value;
  }
  freq.addEventListener('input',calc);pt.addEventListener('input',calc);
- plans[0].classList.add('sel');calc();
+ plans[2].classList.add('sel');calc();
 
  /* 3D tilt + shine */
  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
