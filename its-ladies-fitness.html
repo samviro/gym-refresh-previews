@@ -294,7 +294,7 @@ footer{padding:44px 0 110px;border-top:1px solid rgba(255,255,255,.07);color:rgb
   pt.parentElement.querySelector('output').textContent=pt.value;
  }
  freq.addEventListener('input',calc);pt.addEventListener('input',calc);
- plans[1].classList.add('sel');calc();
+ sel=1;plans[sel].classList.add('sel');calc();
 
  /* 3D tilt + shine */
  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
