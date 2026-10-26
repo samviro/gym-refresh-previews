@@ -49,7 +49,7 @@
  <p class="lead">Pick a membership, then dial in how often you train. The calculator updates live - no forms, no waiting.</p>
  <div class="calc-grid">
   <div>
-   <div class="plan-cards" id="plans"><div class="plan"><span class="pop">Most popular</span><div class="pname">Session Pass</div><div class="pprice">£10<small>/ session</small></div><ul><li>Any mixed class</li><li>Boxing & Muay Thai</li><li>Pay as you go</li></ul></div><div class="plan"><div class="pname">Monthly Unlimited</div><div class="pprice">£35<small>/ month</small></div><ul><li>All classes</li><li>Sample plan for preview</li><li>Best for regulars</li></ul></div><div class="plan"><div class="pname">Annual Supporter</div><div class="pprice">£340<small>/ month</small></div><ul><li>Sample plan for preview</li><li>All classes</li><li>Funds the CIC</li></ul></div></div>
+   <div class="plan-cards" id="plans"><div class="plan"><span class="pop">Most popular</span><div class="pname">Session Pass</div><div class="pprice">£10<small>/ session</small></div><ul><li>Any mixed class</li><li>Boxing & Muay Thai</li><li>Pay as you go</li></ul></div><div class="plan"><div class="pname">Monthly Unlimited</div><div class="pprice">£35<small>/ month</small></div><ul><li>All classes</li><li>Sample plan for preview</li><li>Best for regulars</li></ul></div><div class="plan"><div class="pname">Annual Supporter</div><div class="pprice">£28.33<small>/ month</small></div><ul><li>£340 per year</li><li>All classes</li><li>Funds the CIC</li></ul></div></div>
    <div class="calc-controls">
     <div class="ctrl">
      <label>Sessions per week <output id="freqOut">3</output></label>
@@ -119,7 +119,7 @@
 
 <script>
 (function(){
- var data={"plans": [{"name": "Session Pass", "price": 10.0, "mode": "per"}, {"name": "Monthly Unlimited", "price": 35.0, "mode": "monthly"}, {"name": "Annual Supporter", "price": 340.0, "mode": "monthly"}], "pt": 30.0};
+ var data={"plans": [{"name": "Session Pass", "price": 10.0, "mode": "per"}, {"name": "Monthly Unlimited", "price": 35.0, "mode": "monthly"}, {"name": "Annual Supporter", "price": 28.33, "mode": "monthly"}], "pt": 30.0};
  var plans=document.querySelectorAll('.plan');
  var sel=0, freq=document.getElementById('freq'), pt=document.getElementById('pt');
  plans.forEach(function(p,i){p.addEventListener('click',function(){sel=i;plans.forEach(function(q,j){q.classList.toggle('sel',j===i)});calc()})});
